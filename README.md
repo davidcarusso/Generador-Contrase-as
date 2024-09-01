@@ -1,2 +1,2 @@
-# generador-contraseñas
+# Generador Contraseñas
 generador de contraseñas usando python 
