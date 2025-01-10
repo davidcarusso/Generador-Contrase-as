@@ -1,14 +1,12 @@
-import string 
-import random
+import streamlit as st
+
+from views.pagina_password import visual_convertidor
 
 
-def password() -> str:
-    
-    longitud = int(input("Ingresa el tamaño de la contraseña: "))               # ingresa un numero entero
-    caracteres =  string.ascii_letters + string.digits + string.punctuation      # una variable con todos los caracteres
-    password = "".join( random.choices(caracteres, k=longitud))
-    return password
+def main():
+    visual_convertidor()
 
 
-     
-print(password())
+
+if __name__ == "__main__":
+    main()
